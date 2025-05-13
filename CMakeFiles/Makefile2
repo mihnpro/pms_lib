@@ -66,51 +66,23 @@ CMAKE_BINARY_DIR = /Users/polzovatel/Desktop/C++Project/pms-library
 all: CMakeFiles/core.dir/all
 all: CMakeFiles/utils.dir/all
 all: CMakeFiles/pms_app.dir/all
-all: tests/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/core.dir/codegen
 codegen: CMakeFiles/utils.dir/codegen
 codegen: CMakeFiles/pms_app.dir/codegen
-codegen: tests/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall: tests/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/core.dir/clean
 clean: CMakeFiles/utils.dir/clean
 clean: CMakeFiles/pms_app.dir/clean
-clean: tests/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory tests
-
-# Recursive "all" directory target.
-tests/all: tests/CMakeFiles/test_DateTime.dir/all
-tests/all: tests/CMakeFiles/test_Room.dir/all
-tests/all: tests/CMakeFiles/test_BookingFlow.dir/all
-.PHONY : tests/all
-
-# Recursive "codegen" directory target.
-tests/codegen: tests/CMakeFiles/test_DateTime.dir/codegen
-tests/codegen: tests/CMakeFiles/test_Room.dir/codegen
-tests/codegen: tests/CMakeFiles/test_BookingFlow.dir/codegen
-.PHONY : tests/codegen
-
-# Recursive "preinstall" directory target.
-tests/preinstall:
-.PHONY : tests/preinstall
-
-# Recursive "clean" directory target.
-tests/clean: tests/CMakeFiles/test_DateTime.dir/clean
-tests/clean: tests/CMakeFiles/test_Room.dir/clean
-tests/clean: tests/CMakeFiles/test_BookingFlow.dir/clean
-.PHONY : tests/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/core.dir
@@ -151,7 +123,7 @@ CMakeFiles/core.dir/clean:
 CMakeFiles/utils.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles --progress-num=17,18,19 "Built target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles --progress-num=11,12,13 "Built target utils"
 .PHONY : CMakeFiles/utils.dir/all
 
 # Build rule for subdir invocation for target.
@@ -168,7 +140,7 @@ utils: CMakeFiles/utils.dir/rule
 # codegen rule for target.
 CMakeFiles/utils.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles --progress-num=17,18,19 "Finished codegen for target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles --progress-num=11,12,13 "Finished codegen for target utils"
 .PHONY : CMakeFiles/utils.dir/codegen
 
 # clean rule for target.
@@ -208,105 +180,6 @@ CMakeFiles/pms_app.dir/codegen:
 CMakeFiles/pms_app.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pms_app.dir/build.make CMakeFiles/pms_app.dir/clean
 .PHONY : CMakeFiles/pms_app.dir/clean
-
-#=============================================================================
-# Target rules for target tests/CMakeFiles/test_DateTime.dir
-
-# All Build rule for target.
-tests/CMakeFiles/test_DateTime.dir/all: CMakeFiles/core.dir/all
-tests/CMakeFiles/test_DateTime.dir/all: CMakeFiles/utils.dir/all
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_DateTime.dir/build.make tests/CMakeFiles/test_DateTime.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_DateTime.dir/build.make tests/CMakeFiles/test_DateTime.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles --progress-num=13,14 "Built target test_DateTime"
-.PHONY : tests/CMakeFiles/test_DateTime.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/test_DateTime.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles 13
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_DateTime.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles 0
-.PHONY : tests/CMakeFiles/test_DateTime.dir/rule
-
-# Convenience name for target.
-test_DateTime: tests/CMakeFiles/test_DateTime.dir/rule
-.PHONY : test_DateTime
-
-# codegen rule for target.
-tests/CMakeFiles/test_DateTime.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_DateTime.dir/build.make tests/CMakeFiles/test_DateTime.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles --progress-num=13,14 "Finished codegen for target test_DateTime"
-.PHONY : tests/CMakeFiles/test_DateTime.dir/codegen
-
-# clean rule for target.
-tests/CMakeFiles/test_DateTime.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_DateTime.dir/build.make tests/CMakeFiles/test_DateTime.dir/clean
-.PHONY : tests/CMakeFiles/test_DateTime.dir/clean
-
-#=============================================================================
-# Target rules for target tests/CMakeFiles/test_Room.dir
-
-# All Build rule for target.
-tests/CMakeFiles/test_Room.dir/all: CMakeFiles/core.dir/all
-tests/CMakeFiles/test_Room.dir/all: CMakeFiles/utils.dir/all
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_Room.dir/build.make tests/CMakeFiles/test_Room.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_Room.dir/build.make tests/CMakeFiles/test_Room.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles --progress-num=15,16 "Built target test_Room"
-.PHONY : tests/CMakeFiles/test_Room.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/test_Room.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles 13
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_Room.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles 0
-.PHONY : tests/CMakeFiles/test_Room.dir/rule
-
-# Convenience name for target.
-test_Room: tests/CMakeFiles/test_Room.dir/rule
-.PHONY : test_Room
-
-# codegen rule for target.
-tests/CMakeFiles/test_Room.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_Room.dir/build.make tests/CMakeFiles/test_Room.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles --progress-num=15,16 "Finished codegen for target test_Room"
-.PHONY : tests/CMakeFiles/test_Room.dir/codegen
-
-# clean rule for target.
-tests/CMakeFiles/test_Room.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_Room.dir/build.make tests/CMakeFiles/test_Room.dir/clean
-.PHONY : tests/CMakeFiles/test_Room.dir/clean
-
-#=============================================================================
-# Target rules for target tests/CMakeFiles/test_BookingFlow.dir
-
-# All Build rule for target.
-tests/CMakeFiles/test_BookingFlow.dir/all: CMakeFiles/core.dir/all
-tests/CMakeFiles/test_BookingFlow.dir/all: CMakeFiles/utils.dir/all
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_BookingFlow.dir/build.make tests/CMakeFiles/test_BookingFlow.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_BookingFlow.dir/build.make tests/CMakeFiles/test_BookingFlow.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles --progress-num=11,12 "Built target test_BookingFlow"
-.PHONY : tests/CMakeFiles/test_BookingFlow.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/test_BookingFlow.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles 13
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_BookingFlow.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles 0
-.PHONY : tests/CMakeFiles/test_BookingFlow.dir/rule
-
-# Convenience name for target.
-test_BookingFlow: tests/CMakeFiles/test_BookingFlow.dir/rule
-.PHONY : test_BookingFlow
-
-# codegen rule for target.
-tests/CMakeFiles/test_BookingFlow.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_BookingFlow.dir/build.make tests/CMakeFiles/test_BookingFlow.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles --progress-num=11,12 "Finished codegen for target test_BookingFlow"
-.PHONY : tests/CMakeFiles/test_BookingFlow.dir/codegen
-
-# clean rule for target.
-tests/CMakeFiles/test_BookingFlow.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_BookingFlow.dir/build.make tests/CMakeFiles/test_BookingFlow.dir/clean
-.PHONY : tests/CMakeFiles/test_BookingFlow.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

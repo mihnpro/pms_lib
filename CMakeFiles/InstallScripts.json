@@ -1,8 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/polzovatel/Desktop/C++Project/pms-library/cmake_install.cmake",
-		"/Users/polzovatel/Desktop/C++Project/pms-library/tests/cmake_install.cmake"
+		"/Users/polzovatel/Desktop/C++Project/pms-library/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

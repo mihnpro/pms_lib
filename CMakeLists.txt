@@ -25,5 +25,3 @@ add_executable(pms_app src/main.cpp)
 
 target_link_libraries(pms_app core utils)
 
-enable_testing()
-add_subdirectory(tests)

@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /Users/polzovatel/Desktop/C++Project/pms-library
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	/opt/homebrew/bin/ctest $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -164,45 +154,6 @@ pms_app: cmake_check_build_system
 pms_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pms_app.dir/build.make CMakeFiles/pms_app.dir/build
 .PHONY : pms_app/fast
-
-#=============================================================================
-# Target rules for targets named test_DateTime
-
-# Build rule for target.
-test_DateTime: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_DateTime
-.PHONY : test_DateTime
-
-# fast build rule for target.
-test_DateTime/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_DateTime.dir/build.make tests/CMakeFiles/test_DateTime.dir/build
-.PHONY : test_DateTime/fast
-
-#=============================================================================
-# Target rules for targets named test_Room
-
-# Build rule for target.
-test_Room: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_Room
-.PHONY : test_Room
-
-# fast build rule for target.
-test_Room/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_Room.dir/build.make tests/CMakeFiles/test_Room.dir/build
-.PHONY : test_Room/fast
-
-#=============================================================================
-# Target rules for targets named test_BookingFlow
-
-# Build rule for target.
-test_BookingFlow: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_BookingFlow
-.PHONY : test_BookingFlow
-
-# fast build rule for target.
-test_BookingFlow/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_BookingFlow.dir/build.make tests/CMakeFiles/test_BookingFlow.dir/build
-.PHONY : test_BookingFlow/fast
 
 src/core/Billing.o: src/core/Billing.cpp.o
 .PHONY : src/core/Billing.o
@@ -452,12 +403,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... core"
 	@echo "... pms_app"
-	@echo "... test_BookingFlow"
-	@echo "... test_DateTime"
-	@echo "... test_Room"
 	@echo "... utils"
 	@echo "... src/core/Billing.o"
 	@echo "... src/core/Billing.i"
