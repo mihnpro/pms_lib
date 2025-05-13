@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcore.a CMakeFiles/core.dir/src/core/DateTime.cpp.o CMakeFiles/core.dir/src/core/Room.cpp.o CMakeFiles/core.dir/src/core/Guest.cpp.o CMakeFiles/core.dir/src/core/Booking.cpp.o CMakeFiles/core.dir/src/core/Billing.cpp.o CMakeFiles/core.dir/src/core/Resource.cpp.o CMakeFiles/core.dir/src/core/Housekeeping.cpp.o
+/usr/bin/ranlib libcore.a

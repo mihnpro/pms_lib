@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_Room.dir/unit/test_Room.cpp.o -o test_Room  ../libcore.a ../libutils.a

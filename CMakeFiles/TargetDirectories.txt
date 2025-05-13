@@ -1,0 +1,12 @@
+/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles/core.dir
+/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles/utils.dir
+/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles/pms_app.dir
+/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles/test.dir
+/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles/edit_cache.dir
+/Users/polzovatel/Desktop/C++Project/pms-library/CMakeFiles/rebuild_cache.dir
+/Users/polzovatel/Desktop/C++Project/pms-library/tests/CMakeFiles/test_DateTime.dir
+/Users/polzovatel/Desktop/C++Project/pms-library/tests/CMakeFiles/test_Room.dir
+/Users/polzovatel/Desktop/C++Project/pms-library/tests/CMakeFiles/test_BookingFlow.dir
+/Users/polzovatel/Desktop/C++Project/pms-library/tests/CMakeFiles/test.dir
+/Users/polzovatel/Desktop/C++Project/pms-library/tests/CMakeFiles/edit_cache.dir
+/Users/polzovatel/Desktop/C++Project/pms-library/tests/CMakeFiles/rebuild_cache.dir
